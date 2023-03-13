@@ -1,0 +1,127 @@
+.mduLogo {
+  width: 300px;
+}
+
+.MDUEvents {
+  color: #383838;
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 4.3;
+}
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  left: 0;
+  background-color: #1c6758;
+}
+
+.right {
+  right: 0;
+  background-color: #d6cda4;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.signup-to-right {
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(5, 5, 5);
+}
+
+.centered-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  text-align: center;
+}
+.signing-up {
+  display: flex;
+}
+.signup-to-right {
+  margin-left: 25rem;
+}
+.login-signin {
+  background-color: #ff4800;
+}
+.login-signin:hover {
+  background-color: #ff4800af;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+  .mduLogo {
+    width: 250px;
+  }
+  .centered-form {
+    width: 20rem;
+  }
+  .signup-to-right {
+    margin-left: 15rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mduLogo {
+    width: 250px;
+  }
+  .centered-form {
+    width: 20rem;
+  }
+
+  .split {
+    height: 50%;
+    width: 100%;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .mobile-media {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .mduLogo {
+    width: 200px;
+  }
+  .centered-form {
+    width: 15rem;
+  }
+  .signup-to-right {
+    margin-left: 10rem;
+  }
+  .g-recaptcha {
+    transform:scale(0.8);
+    -webkit-transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
+  .split {
+    height: 50%;
+    width: 100%;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .mobile-media {
+    top: 50%;
+  }
+}
